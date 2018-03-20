@@ -1,0 +1,421 @@
+DIT_perks = {
+	wish_nn = {
+
+		available = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+
+		cost = 200
+
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+		modifier = {
+			stability_weekly = 0.1
+			war_support_weekly = -0.05
+		}
+		complete_effect = {
+			
+		}
+	}
+	explosion = {
+
+		available = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+
+		cost = 200
+
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+		modifier = {
+			army_artillery_attack_factor = 0.4
+			army_artillery_defence_factor = 0.4
+			supply_consumption_factor = 0.25
+		}
+		complete_effect = {
+			
+		}
+	}
+	gas_gas_gas = {
+
+		available = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+
+		cost = 200
+
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+		modifier = {
+			army_speed_factor = 0.3
+			supply_consumption_factor = 0.1
+		}
+		complete_effect = {
+			
+		}
+	}
+	AAA_rage = {
+
+		available = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+
+		cost = 200
+
+		days_remove = 100
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			NOT = {
+				has_idea = shitposting
+			}
+			has_country_flag = emoji_contest_held
+		}
+		modifier = {
+			army_attack_factor = 0.25
+			army_defence_factor = -0.2
+		}
+		complete_effect = {
+			
+		}
+	}
+}
+DIT_community_games = {
+
+	war_thunder = {
+
+
+		available = {
+			
+		}
+		selectable_mission = yes
+		cost = 20
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+		days_mission_timeout = 110
+		days_remove = 20
+		visible = {
+			tag = DIT
+		}
+
+		complete_effect = {
+			add_war_support = 0.1
+			set_country_flag = war_thunder_games_held_1
+		}
+		timeout_effect = {
+			add_war_support = -0.05
+		}
+	}
+
+	war_thunder_1 = {
+		icon = war_thunder
+
+		available = {
+			tag = DIT
+			has_country_flag = war_thunder_games_held_1
+		}
+		selectable_mission = yes
+		cost = 60
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 20
+		visible = {
+			tag = DIT
+			has_country_flag = war_thunder_games_held_1
+			
+		}
+		complete_effect = {
+			add_war_support = 0.1
+			army_experience = 10
+			set_country_flag = war_thunder_games_held_2
+		}
+		
+	}
+
+	war_thunder_2 = {
+		icon = war_thunder
+
+		available = {
+			tag = DIT
+			has_country_flag = war_thunder_games_held_2
+		}
+		selectable_mission = yes
+		cost = 80
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 10
+		visible = {
+			tag = DIT
+			has_country_flag = war_thunder_games_held_2
+		}
+		complete_effect = {
+			add_war_support = 0.1
+			army_experience = 10
+			set_country_flag = war_thunder_games_held_3
+		}
+	}
+	minecraft = {
+
+		available = {
+
+		}
+		selectable_mission = yes
+		cost = 100
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 100
+		visible = {
+
+		}
+		complete_effect = {
+			add_timed_idea = {
+				days = 50
+				idea = minecraft_event
+			}
+		}
+	}
+
+	roblox = {
+		selectable_mission = yes
+		available = {
+
+		}
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		days_remove = 100
+		visible = {
+
+		}
+		complete_effect = {
+			add_timed_idea = {
+				days = 50
+				idea = roblox_event
+			}
+		}
+	}
+}
+DIT_internal_affairs = {
+	emoji_contest = {
+
+		available = {
+			NOT = {
+				has_idea = shitposting
+			}
+		}
+
+		cost = 70
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			NOT = {
+				has_idea = shitposting
+			}
+		}
+
+		complete_effect = {
+			country_event = ditlandia.36
+		}
+	}
+	capital_in_swamp = {
+
+		available = {
+			NOT = {
+				has_idea = shitposting
+			}
+			owns_state = 762
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+
+		}
+
+		complete_effect = {
+			set_capital = 762
+		}
+	}
+	spinner_goal = {
+
+		available = {
+
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			SPI = { exists = yes }
+		}
+
+		complete_effect = {
+			create_wargoal = { target = SPI type = annex_everything }
+			add_war_support = 0.1
+		}
+	}
+	spinner_goal2 = {
+		icon = spinner_goal
+		available = {
+			
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			SPI = { exists = no }
+			NOT = { owns_state = 764 }
+		}
+
+		complete_effect = {
+			764 = {
+			owner = {
+				ROOT = {
+					create_wargoal = {
+						target = PREV
+						type = take_state
+						generator = { 764 }
+						}
+					}
+				}
+			}
+			add_war_support = 0.1
+		}
+	}
+	spinner_distribution = {
+
+		available = {
+			NOT = { owns_state = 764 }
+		}
+
+		cost = 120
+
+		days_remove = 100
+
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			NOT = { owns_state = 764 }
+		}
+
+		modifier = {
+			war_support_weekly = 0.01
+			stability_weekly = 0.01
+			industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
+		}
+	}
+	spinner_distribution_2 = {
+
+		available = {
+			owns_state = 764
+		}
+
+		cost = 120
+
+		days_remove = 100
+
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		visible = {
+			owns_state = 764
+		}
+
+		modifier = {
+			war_support_weekly = 0.01
+			stability_weekly = 0.01
+			industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.2
+		}
+		complete_effect = {
+
+		}
+	}
+}

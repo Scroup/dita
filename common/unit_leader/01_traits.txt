@@ -1,0 +1,111 @@
+leader_traits = {
+	bad_general = { 
+		type = all
+		allowed = {
+			always = no # not gainable
+		}
+		modifier = {
+			experience_gain_factor = -0.80 
+			max_dig_in = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dit_officer = {
+		type = all
+		allowed = {
+			always = no
+		}
+		modifier = { 
+		army_morale_factor = 0.05
+		land_reinforce_rate = 0.03
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dit_veteran = {
+		type = all
+		allowed = {
+			always = no
+		}
+		modifier = { 
+		army_morale_factor = 0.04
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dit_agent = {
+		type = all
+		allowed = {
+			always = no
+		}
+		modifier = { 
+		army_morale_factor = 0.02
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dit_normie = {
+		type = all
+		allowed = {
+			always = no
+		}
+		modifier = { 
+		army_morale_factor = 0.01
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	dit_fastest_memer = {
+		type = all
+		allowed = {
+			always = no
+		}
+		modifier = {
+		land_reinforce_rate = 0.05
+		army_speed_factor = 0.15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	waifu = {
+		type = corps_commander
+		allowed = {
+			always = no
+		}
+		modifier = { 
+		army_morale_factor = 0.3
+		recon_factor = 0.25
+		winter_attrition_factor = -0.35
+		river = {
+				attack = 0.1
+			}
+		fort = {
+				attack = 0.2
+			}
+		army_armor_speed_factor = 0.05 
+		army_armor_attack_factor = 0.1 
+		out_of_supply_factor = -0.3
+		desert = {
+				movement = 0.03
+				attack = 0.1
+				defence = 0.1
+			}
+		urban = {
+				movement = 0.05
+				attack = 0.1
+				defence = 0.1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

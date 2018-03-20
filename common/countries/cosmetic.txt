@@ -1,0 +1,36 @@
+
+MAL_UK = {
+    color = rgb { 201 56 93 }
+    color_ui = rgb { 255 73 121 }
+}
+
+INS_HOL = {
+    color = rgb { 203 138 74 }
+    color_ui = rgb { 255 179 96 }
+}
+
+HUN_EMPIRE = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+
+AUS_NOT_WHITE = {	
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
+}
+GER_DITFASH = {	
+	color = rgb { 61 134 101 }
+	color_ui = rgb { 61 134 101 }
+}
+GER_DITCOM = {	
+	color = rgb { 61 134 101 }
+	color_ui = rgb { 61 134 101 }
+}
+SOV_DIT = {	
+	color = rgb { 142 90 76 }
+	color_ui = rgb { 142 90 76 }
+}
+FIN_SCAN = {
+	color = rgb { 155 160 203 }
+	color_ui = rgb { 155 160 203 }
+}

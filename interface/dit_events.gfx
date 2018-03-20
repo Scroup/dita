@@ -1,0 +1,140 @@
+spriteTypes = {
+	#### Ditlandian Events #####
+
+	spriteType = {
+		name = "GFX_cat_balls"
+		texturefile = "gfx/event_pictures/cat_balls.dds"
+	}
+	spriteType = {
+		name = "GFX_hans_here"
+		texturefile = "gfx/event_pictures/hans_here.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_tanks"
+		texturefile = "gfx/event_pictures/ditlandia_tanks.dds"
+	}
+	spriteType = {
+		name = "GFX_dita_alliance"
+		texturefile = "gfx/event_pictures/dita_alliance.dds"
+	}
+	spriteType = {
+		name = "GFX_dita_alliance_no"
+		texturefile = "gfx/event_pictures/dita_alliance_no.dds"
+	}
+	spriteType = {
+		name = "GFX_tenshi_france"
+		texturefile = "gfx/event_pictures/tenshi_france.dds"
+	}
+	spriteType = {
+		name = "GFX_cat_balls_2"
+		texturefile = "gfx/event_pictures/cat_balls_2.dds"
+	}
+	spriteType = {
+		name = "GFX_shitposting1"
+		texturefile = "gfx/event_pictures/shitposting1.dds"
+	}
+	spriteType = {
+		name = "GFX_shitposting2"
+		texturefile = "gfx/event_pictures/shitposting2.dds"
+	}
+	spriteType = {
+		name = "GFX_shitposting3"
+		texturefile = "gfx/event_pictures/shitposting3.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_tanks_smol"
+		texturefile = "gfx/event_pictures/ditlandia_tanks_smol.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_tanks_1"
+		texturefile = "gfx/event_pictures/ditlandia_tanks_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_berlin"
+		texturefile = "gfx/event_pictures/ditlandia_berlin.dds"
+	}
+	spriteType = {
+		name = "GFX_event_ditcom"
+		texturefile = "gfx/event_pictures/event_ditcom.dds"
+	}
+	spriteType = {
+		name = "GFX_event_ditcom2"
+		texturefile = "gfx/event_pictures/event_ditcom2.dds"
+	}
+	spriteType = {
+		name = "dit_germany"
+		texturefile = "gfx/event_pictures/dit_germany.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_tanks_smol2"
+		texturefile = "gfx/event_pictures/ditlandia_tanks_smol2.dds"
+	}
+	spriteType = {
+		name = "GFX_dita_alliance_comintern"
+		texturefile = "gfx/event_pictures/dita_alliance_comintern.dds"
+	}
+	spriteType = {
+		name = "GFX_dita_alliance_axis"
+		texturefile = "gfx/event_pictures/dita_alliance_axis.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_paris"
+		texturefile = "gfx/event_pictures/ditlandia_paris.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_london"
+		texturefile = "gfx/event_pictures/ditlandia_london.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_washington"
+		texturefile = "gfx/event_pictures/ditlandia_washington.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_moscow"
+		texturefile = "gfx/event_pictures/ditlandia_moscow.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_budapest"
+		texturefile = "gfx/event_pictures/ditlandia_budapest.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_rome"
+		texturefile = "gfx/event_pictures/ditlandia_rome.dds"
+	}
+	spriteType = {
+		name = "GFX_ditlandia_tokyo"
+		texturefile = "gfx/event_pictures/ditlandia_tokyo.dds"
+	}
+	spriteType = {
+		name = "GFX_event_normies"
+		texturefile = "gfx/event_pictures/event_normies.dds"
+	}
+	spriteType = {
+		name = "GFX_event_cameron_here"
+		texturefile = "gfx/event_pictures/event_cameron_here.dds"
+	}
+	spriteType = {
+		name = "GFX_new_people"
+		texturefile = "gfx/event_pictures/new_people.dds"
+	}
+	spriteType = {
+		name = "GFX_shitposting4"
+		texturefile = "gfx/event_pictures/shitposting4.dds"
+	}
+	spriteType = {
+		name = "GFX_ditasswamp"
+		texturefile = "gfx/event_pictures/ditasswamp.dds"
+	}
+	spriteType = {
+		name = "GFX_kittymagic"
+		texturefile = "gfx/event_pictures/kittymagic.dds"
+	}
+	spriteType = {
+		name = "GFX_kittymagic2"
+		texturefile = "gfx/event_pictures/kittymagic2.dds"
+	}
+	spriteType = {
+		name = "GFX_kittymagic3"
+		texturefile = "gfx/event_pictures/kittymagic3.dds"
+	}
+}

@@ -1,0 +1,31 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_trait_bad_general"
+		texturefile = "gfx/interface/trait_bad_general.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_dit_agent"
+		texturefile = "gfx/interface/trait_dit_agent.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_dit_normie"
+		texturefile = "gfx/interface/trait_dit_normie.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_dit_veteran"
+		texturefile = "gfx/interface/trait_dit_veteran.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_dit_officer"
+		texturefile = "gfx/interface/trait_dit_officer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_waifu"
+		texturefile = "gfx/interface/trait_waifu.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_dit_fastest_memer"
+		texturefile = "gfx/interface/trait_fastest_memer.dds"
+	}
+}

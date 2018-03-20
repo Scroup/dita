@@ -1,0 +1,151 @@
+spriteTypes = {
+			###### Ditlandia starts here ######
+	spriteType = {
+		name = "GFX_idea_scroup"
+		texturefile = "gfx/interface/ideas/idea_scroup.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hobbit"
+		texturefile = "gfx/interface/ideas/idea_hobbit.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_blitz"
+		texturefile = "gfx/interface/ideas/idea_blitz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hanss"
+		texturefile = "gfx/interface/ideas/idea_hanss.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tjarnov"
+		texturefile = "gfx/interface/ideas/idea_tjarnov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_andy"
+		texturefile = "gfx/interface/ideas/idea_andy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_codephantom"
+		texturefile = "gfx/interface/ideas/idea_codephantom.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_hanfei"
+		texturefile = "gfx/interface/ideas/idea_hanfei.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_flakesnow"
+		texturefile = "gfx/interface/ideas/idea_flakesnow.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_eztli"
+		texturefile = "gfx/interface/ideas/idea_eztli.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tenshi"
+		texturefile = "gfx/interface/ideas/idea_10shi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_azi"
+		texturefile = "gfx/interface/ideas/idea_azi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_katty"
+		texturefile = "gfx/interface/ideas/idea_katty.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_pepethekek"
+		texturefile = "gfx/interface/ideas/idea_pepethekek.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_zurban"
+		texturefile = "gfx/interface/ideas/idea_zurban.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kevin"
+		texturefile = "gfx/interface/ideas/idea_kevin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_magicmuller"
+		texturefile = "gfx/interface/ideas/idea_magicmuller.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_victornevsky"
+		texturefile = "gfx/interface/ideas/idea_victornevsky.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_johnfreeman"
+		texturefile = "gfx/interface/ideas/idea_johnfreeman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_vegaspro"
+		texturefile = "gfx/interface/ideas/idea_vegaspro.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snekfactory"
+		texturefile = "gfx/interface/ideas/idea_snekfactory.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kektanks"
+		texturefile = "gfx/interface/ideas/idea_kektanks.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_rem"
+		texturefile = "gfx/interface/ideas/idea_rem.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kekiwintowka"
+		texturefile = "gfx/interface/ideas/idea_kekiwintowka.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kappa"
+		texturefile = "gfx/interface/ideas/idea_kappa.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shitposting"
+		texturefile = "gfx/interface/ideas/idea_shitposting.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shoukaku"
+		texturefile = "gfx/interface/ideas/idea_shoukaku.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_councilor"
+		texturefile = "gfx/interface/ideas/idea_councilor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_normies_not_allowed"
+		texturefile = "gfx/interface/ideas/idea_normies_not_allowed.dds"
+	}
+	spriteType = {
+		name = "GFX_internationalism"
+		texturefile = "gfx/interface/ideas/idea_internationalism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kynx"
+		texturefile = "gfx/interface/ideas/idea_kynx.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kittymagic"
+		texturefile = "gfx/interface/ideas/idea_kittymagic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_spinner_love"
+		texturefile = "gfx/interface/ideas/idea_spinner.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_minecraft_event"
+		texturefile = "gfx/interface/ideas/idea_minecraft_event.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_roblox_event"
+		texturefile = "gfx/interface/ideas/idea_roblox_event.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bad_emojis"
+		texturefile = "gfx/interface/ideas/idea_bad_emojis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_new_emojis"
+		texturefile = "gfx/interface/ideas/idea_good_emojis.dds"
+	}
+}

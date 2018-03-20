@@ -1,0 +1,149 @@
+﻿division_template = {
+	name = "Buckers"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Pls no"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Why do you play this?"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorized Group" 
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "Kek"
+		location = 13208
+		division_template = "Buckers"
+		start_experience_factor = 0.9 }
+	division = {
+		name = "Pls no"
+		location = 13208
+		division_template = "Buckers"
+		start_experience_factor = 0.9 }
+	division = {
+		name = "Pls no 2"
+		location = 13208
+		division_template = "Buckers"
+		start_experience_factor = 0.9 }
+	division = {
+		name = "Pls no 3"
+		location = 13208
+		division_template = "Buckers"
+		start_experience_factor = 0.9 }
+	division = {
+		name = "Pls no 4"
+		location = 13208
+		division_template = "Buckers"
+		start_experience_factor = 0.9 }
+	division = {
+		name = "Pls no 5"
+		location = 13208
+		division_template = "Buckers"
+		start_experience_factor = 0.9 }
+	division = {
+		name = "Pls no 5"
+		location = 13207
+		division_template = "Buckers"
+		start_experience_factor = 0.9 }
+	}
+
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "SPI"
+		}
+		requested_factories = 3
+		progress = 0.86
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "SPI" }
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "SPI"
+		}
+		requested_factories = 2
+		progress = 0.90
+		efficiency = 100
+	}
+}

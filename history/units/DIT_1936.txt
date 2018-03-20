@@ -1,0 +1,209 @@
+﻿division_template = {
+	name = "Discord Elites"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Gopnik Squad"			#Infantry Division - kek
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Stronk Tanks"
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Motorized Group" 
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		name = "Azi Diwiśion"
+		location = 11586
+		division_template = "Gopnik Squad"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "DerpKing 22nd 'Edgelord' Diwiśion"
+		location = 11586
+		division_template = "Discord Elites"
+		start_experience_factor = 0.2 }
+	division = {
+		name = "Hanfei 'Cat Balls' Diwiśion"
+		location = 11586
+		division_template = "Discord Elites"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Varray's 'Gopnik' Diwiśion"
+		location = 11586
+		division_template = "Discord Elites"
+		start_experience_factor = 0.8 }
+	division = {
+		name = "Hans' 'Suicide Squad' Diwiśion"
+		location = 11586
+		division_template = "Discord Elites"
+		start_experience_factor = 0.5 }
+	division = {
+		name = "Stuka's Mechanized Corp"
+		location = 9599
+		division_template = "Motorized Group"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "Katty's Legs"
+		location = 3984
+		division_template = "Gopnik Squad"
+		start_experience_factor = 0.1 }	
+	division = {
+		name = "KrauleR 'Nonsense' Diwiśion"
+		location = 6970
+		division_template = "Gopnik Squad"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "Shoukaku 'Baka' Diwiśion"
+		location = 11887
+		division_template = "Stronk Tanks"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "VictorNevsky's 'Internatinonale' Diwiśion"
+		location = 9621
+		division_template = "Gopnik Squad"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "John Freeman 'Loli Breathing' Diwiśion"
+		location = 3614
+		division_template = "Discord Elites"
+		start_experience_factor = 0.6 }
+	division = {
+		name = "Andy 'Tight Boy' Diwiśion"
+		location = 797
+		division_template = "Discord Elites"
+		start_experience_factor = 0.6 }
+	division = {
+		name = "'Cheburek' Diwiśion"
+		location = 614
+		division_template = "Gopnik Squad"
+		start_experience_factor = 0.6 }
+	division = {
+		name = "Scroup 'Nyaw' Diwiśion"
+		location = 614
+		division_template = "Discord Elites"
+		start_experience_factor = 0.8 }
+	division = {
+		name = "'Gaijin' OP Diwiśion"
+		location = 614
+		division_template = "Stronk Tanks"
+		start_experience_factor = 1 }
+	division = {
+		name = "Flakesnow 'Unicorn' Diwiśion"
+		location = 614
+		division_template = "Gopnik Squad" }
+	}
+
+air_wings = {
+	107 = {
+		# 1. Vazduhoplovna Brigada -- Dewotine D.1/9/27 fighters
+		fighter_equipment_0 = {
+			owner = "DIT" 
+			amount = 50
+		}
+	}
+	107 = {
+		# 2. Vazduhoplovna Brigada  -- Hawker Fury and Ikarus IK-2 fighters
+		fighter_equipment_1 = {
+			owner = "DIT" 
+			amount = 10
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "DIT"
+		}
+		requested_factories = 3
+		progress = 0.86
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "DIT" }
+		requested_factories = 1
+		progress = 0.40
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "DIT"
+		}
+		requested_factories = 2
+		progress = 0.90
+		efficiency = 100
+	}
+}

@@ -1,0 +1,27 @@
+
+state={
+	id=765
+	name="STATE_765"
+
+	history={
+		owner = SOV
+		victory_points = {
+			6539 10 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+		}
+		add_core_of = SOV
+		add_core_of = KEK
+
+	}
+
+	provinces={
+		468 470 545 3406 3515 3517 3538 6479 6525 6539 6541 6564 6575 6588 9475 9513 9530 11395 11457 11460 11472 11482 11538 
+	}
+	manpower=847208
+	state_category=rural
+}

@@ -1,0 +1,1413 @@
+﻿
+add_namespace = ditlandia
+add_namespace = ditlandia_news
+country_event = {
+	id = ditlandia.1
+	title = ditlandia.1.t
+	desc = ditlandia.1.d
+	picture = GFX_cat_balls
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		date > 1936.2.1
+		has_defensive_war = no
+		has_idea = shitposting
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ditlandia.1.a
+		add_political_power = -40
+		add_stability = -0.01
+		ai_chance = { factor = 100 }
+	}
+}
+country_event = {
+	id = ditlandia.2
+	title = ditlandia.2.t
+	desc = ditlandia.2.d
+	picture = GFX_hans_here
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		owns_state = 43
+		owns_state = 155
+		owns_state = 154
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ditlandia.2.a
+		custom_effect_tooltip = HANS_LIBERATED
+		hidden_effect = {
+		set_country_flag = hans_liberated
+		add_political_power = 40
+		create_corps_commander = {
+			name = "Hans"
+			portrait_path = "gfx/leaders/DIT/Hans.dds"
+			traits = { urban_assault_specialist dit_officer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			}
+		}
+		ai_chance = { factor = 50 }
+	}
+	option = {
+	name = ditlandia.2.b
+	custom_effect_tooltip = HANS_LIBERATED2
+	hidden_effect = {
+	set_country_flag = hans_liberated
+	add_political_power = 120
+		}
+	ai_chance = { factor = 50 }
+	}
+}
+############### France Invitation or Not ##################
+country_event = {
+	id = ditlandia.3
+	title = ditlandia.3.t
+	desc = ditlandia.3.d
+	picture = GFX_tenshi_france
+
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia.3.a
+		custom_effect_tooltip = TENSHI_GENERAL
+		hidden_effect = {
+		diplomatic_relation = { country = FRA relation = guarantee active = yes }
+		FRA = {
+			country_event = { days = 2 id = ditlandia.30 }
+		}
+		create_corps_commander = {
+			name = "Tenshi"
+			portrait_path = "gfx/leaders/DIT/Tenshi.dds"
+			traits = { dit_veteran }
+			skill = 4
+		}
+		create_faction = "dita_alliance"
+		}
+		ai_chance = { factor = 65 }
+	}
+	option = {
+		name = ditlandia.3.b
+		custom_effect_tooltip = TENSHI_GENERAL2
+		hidden_effect = {
+		create_corps_commander = {
+			name = "Tenshi"
+			portrait_path = "gfx/leaders/DIT/Tenshi.dds"
+			traits = { dit_veteran }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 2
+			}
+		}
+		ai_chance = { factor = 35 }
+	}
+
+}
+###### REGULAR SHITPOSTING ##########
+country_event = {
+	id = ditlandia.4
+	title = ditlandia.4.t
+	desc = ditlandia.4.d
+	picture = GFX_cat_balls_2
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		date > 1937.7.5
+		has_idea = shitposting
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ditlandia.4.a
+		add_political_power = -50
+		ai_chance = { factor = 100 }
+	}
+}
+## Shitposting announcement ##
+country_event = {
+	id = ditlandia.5
+	title = ditlandia.5.t
+	desc = ditlandia.5.d
+	picture = GFX_shitposting1
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		date > 1936.1.1
+		has_idea = shitposting
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ditlandia.5.a
+
+		}
+	}
+country_event = {
+	id = ditlandia.6
+	title = ditlandia.6.t
+	desc = ditlandia.6.d
+	picture = GFX_shitposting2
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		date > 1937.8.2
+		has_idea = shitposting
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = ditlandia.6.a
+		add_political_power = -50
+		
+	}
+}
+# End of Shitposting #
+country_event = {
+	id = ditlandia.7
+	title = ditlandia.7.t
+	desc = ditlandia.7.d
+	picture = GFX_shitposting3
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia.7.a
+		hidden_effect = {
+		remove_ideas = shitposting
+		add_political_power = -120
+			}
+		}
+	}
+# Claims on Romania
+country_event = {
+	id = ditlandia.8
+	title = ditlandia.8.t
+	desc = ditlandia.8.d
+	picture = GFX_ditlandia_tanks_smol2
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = ditlandia.8.a
+		custom_effect_tooltip = DIT_ROMANIA
+		hidden_effect = {
+		ROM = { country_event = ditlandia.35 }
+		}
+	}
+}
+# Romania Accepts
+country_event = {
+	id = ditlandia.9
+	title = ditlandia.9.t
+	desc = ditlandia.9.d
+	picture = GFX_ditlandia_tanks_smol
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.9.a
+		DIT = { 
+			transfer_state = 83
+			transfer_state = 82
+		}
+		hidden_effect = {
+			news_event = { days = 2 id = ditlandia_news.1104 }
+		}
+	}
+}
+
+#Romania Refuses
+country_event = {
+	id = ditlandia.10
+	title = ditlandia.10.t
+	desc = ditlandia.10.d
+	picture = GFX_ditlandia_tanks_smol2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.10.a
+		create_wargoal = {
+			type = take_state
+			target = ROM
+			generator = { 82 83 }
+		}
+		hidden_effect = {
+			news_event = { days = 1 id = ditlandia_news.1105 }
+		}
+	}
+}
+#ask to join comintern
+country_event = {
+	id = ditlandia.11
+	title = ditlandia.11.t
+	desc = ditlandia.11.d
+	picture = GFX_event_ditcom2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.11.a
+		custom_effect_tooltip = DITCOMINTERN
+		hidden_effect = {
+			SOV = { country_event = { days = 2 id = ditlandia.34 }
+		}
+	}
+}	
+	option = {
+		name = ditlandia.11.b
+		add_political_power = 100
+		}
+	}
+	# USSR agrees
+country_event = {
+	id = ditlandia.12
+	title = ditlandia.12.t
+	desc = ditlandia.12.d
+	picture = GFX_event_ditcom
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.12.a
+		add_political_power = 20
+	}
+}
+	# USSR rejects
+country_event = {
+	id = ditlandia.13
+	title = ditlandia.13.t
+	desc = ditlandia.13.d
+	picture = GFX_event_ditcom2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.13.a
+	}
+}
+#ask to join Axis
+country_event = {
+	id = ditlandia.14
+	title = ditlandia.14.t
+	desc = ditlandia.14.d
+	picture = dit_germany
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.14.a
+		custom_effect_tooltip = DITAXIS
+		hidden_effect = {
+			GER = { country_event = { days = 2 id = ditlandia.31 }
+			}
+		}
+	}	
+	option = {
+		name = ditlandia.14.b
+		custom_effect_tooltip = DITAXIS2
+		hidden_effect = { 
+			add_political_power = 100
+			create_wargoal = {
+			type = annex_everything
+			target = GER
+			}
+			}
+		}
+	}
+# Germany accepts
+country_event = {
+	id = ditlandia.15
+	title = ditlandia.15.t
+	desc = ditlandia.15.d
+	picture = report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.15.a
+		add_political_power = 50
+	}
+}
+# Germany rejects
+country_event = {
+	id = ditlandia.16
+	title = ditlandia.16.t
+	desc = ditlandia.16.d
+	picture = dit_germany
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.16.a
+		add_political_power = 50
+		declare_war_on = { target = GER type = annex_everything }
+	}
+}
+
+country_event = {
+	id = ditlandia.17
+	title = ditlandia.17.t
+	desc = ditlandia.17.d
+	picture = GFX_event_normies
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		DIT = {
+		owns_state = 64
+		has_country_flag = hans_liberated
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	option = {
+		name = ditlandia.17.a
+		add_political_power = 10
+		add_ideas = normies_not_allowed
+	}
+}
+
+country_event = {
+	id = ditlandia.18
+	title = ditlandia.18.t
+	desc = ditlandia.18.d
+	picture = GFX_event_cameron_here
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		DIT = {
+		controls_state = 338
+		has_country_flag = hans_liberated
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	option = {
+		name = ditlandia.18.a
+		custom_effect_tooltip = CAMERON
+		hidden_effect = {
+		create_corps_commander = {
+			name = "Cameron"
+			portrait_path = "gfx/leaders/DIT/Cameron.dds"
+			traits = { bad_general dit_veteran career_officer politically_connected }
+			skill = 1
+			id = 9434
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 2
+			}
+		set_country_flag = cameronhere
+		}
+	}
+}
+country_event = {
+	id = ditlandia.19
+	title = ditlandia.19.t
+	desc = ditlandia.19.d
+	picture = GFX_new_people
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia.19.a
+		add_political_power = 100
+		custom_effect_tooltip = GENERALSDIT
+		hidden_effect = {
+		create_corps_commander = {
+			name = "Enthark"
+			portrait_path = "gfx/leaders/DIT/Enthark.dds"
+			traits = { naval_invader dit_agent }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			}
+		create_corps_commander = {
+			name = "SovietBias"
+			portrait_path = "gfx/leaders/DIT/SovietBias.dds"
+			traits = { swamp_fox dit_agent }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			}
+		create_corps_commander = {
+			name = "Kynx"
+			portrait_path = "gfx/leaders/DIT/Kynx.dds"
+			traits = { jungle_rat dit_agent }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 3
+			}
+		create_corps_commander = {
+			name = "Kevin"
+			portrait_path = "gfx/leaders/DIT/Kevin.dds"
+			traits = { dit_agent bearer_of_artillery }
+			skill = 1
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			}
+		create_corps_commander = {
+			name = "Vladislavski"
+			portrait_path = "gfx/leaders/DIT/Vlad.dds"
+			traits = { dit_normie }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			}
+		create_corps_commander = {
+			name = "Reconhunt"
+			portrait_path = "gfx/leaders/DIT/Reconhunt.dds"
+			traits = { dit_agent }
+			skill = 4
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			}
+		create_corps_commander = {
+			name = "Tenshi"
+			portrait_path = "gfx/leaders/DIT/Tenshi.dds"
+			traits = { dit_veteran panzer_leader }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			}
+		create_corps_commander = {
+			name = "Azarias"
+			portrait_path = "gfx/leaders/DIT/Azi.dds"
+			traits = { dit_agent }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			}
+		}
+		create_corps_commander = {
+			name = "Waifu-Chan"
+			portrait_path = "gfx/leaders/DIT/Waifuchan.dds"
+			traits = { dit_agent }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			}
+		}
+	}
+
+country_event = {
+	id = ditlandia.20
+	title = ditlandia.20.t
+	desc = ditlandia.20.d
+	picture = GFX_ditlandia_tanks_smol
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		DIT = {
+		owns_state = 102
+		owns_state = 103
+		owns_state = 104
+		owns_state = 105
+		owns_state = 106
+		owns_state = 109
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	option = {
+		name = ditlandia.20.a
+		add_state_core = 102
+		add_state_core = 103
+		add_state_core = 104
+		add_state_core = 105
+		add_state_core = 106
+		add_state_core = 109
+			}
+	}
+
+
+country_event = {
+	id = ditlandia.22
+	title = ditlandia.22.t
+	desc = ditlandia.22.d
+	picture = GFX_shitposting4
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+	
+	trigger = {
+		tag = DIT
+		date > 1938.1.1
+		has_idea = shitposting
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	option = {
+		name = ditlandia.22.a
+		add_political_power = -150
+		
+	}
+}
+
+country_event = {
+	id = ditlandia.23
+	title = ditlandia.23.t
+	desc = ditlandia.23.d
+	picture = GFX_cameronalive
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+
+	trigger = {
+		tag = DIT
+		has_country_flag = cameronhere
+	}
+
+	mean_time_to_happen = {
+		days = 360
+	}
+	option = {
+		name = ditlandia.23.a
+		custom_effect_tooltip = CAMERON2
+		hidden_effect = {
+		create_corps_commander = {
+			name = "Cameron"
+			portrait_path = "gfx/leaders/DIT/Cameron.dds"
+			traits = { dit_veteran }
+			skill = 2
+			id = 9435
+			}
+		remove_unit_leader = 9434
+		
+	}
+}
+}
+
+country_event = {
+	id = ditlandia.24
+	title = ditlandia.24.t
+	desc = ditlandia.24.d
+	picture = GFX_kittymagic
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+
+	trigger = {
+		tag = DIT
+		date > 1939.3.8
+		has_idea = kittymagic
+	}
+
+	mean_time_to_happen = {
+		days = 11
+	}
+	option = {
+		name = ditlandia.24.a
+		if = {
+			start_civil_war = {
+				ideology = autism
+				size = 0.3
+			}
+		}
+	}
+	option = {
+		name = ditlandia.24.b
+		if = {
+			limit = {
+				has_government = democratic
+			}
+			start_civil_war = {
+				ruling_party = autism
+				ideology = democratic
+				size = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_government = fascism
+			}
+			start_civil_war = {
+				ruling_party = autism
+				ideology = fascism
+				size = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_government = communism
+			}
+			start_civil_war = {
+				ruling_party = autism
+				ideology = communism
+				size = 0.6
+			}
+		}
+		if = {
+			limit = {
+				has_government = neutrality
+			}
+			start_civil_war = {
+				ruling_party = autism
+				ideology = neutrality
+				size = 0.6
+			}
+		}
+	}
+}
+country_event = {
+	id = ditlandia.25
+	title = ditlandia.25.t
+	desc = ditlandia.25.d
+	picture = GFX_kittymagic2
+	
+	fire_only_once = yes
+
+	is_triggered_only = no
+
+	trigger = {
+		tag = DIT
+		date > 1937.1.1
+		has_idea = kittymagic
+	}
+
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = {
+		name = ditlandia.25.a
+		add_political_power = -50
+	}
+}
+country_event = {
+	id = ditlandia.26
+	title = ditlandia.26.t
+	desc = ditlandia.26.d
+	picture = GFX_kittymagic3
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ditlandia.26.a
+		add_political_power = -50
+		remove_ideas = kittymagic
+	}
+}
+
+country_event = {
+	id = ditlandia.28
+	title = ditlandia.28.t
+	desc = ditlandia.28.d
+	picture = GFX_kittymagic3
+
+	trigger = {
+		tag = GER
+		is_puppet_of = DIT
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		trigger = { has_government = fascism }
+		name = ditlandia.28.a
+		set_cosmetic_tag = GER_DITFASH
+	}
+	option = {
+		trigger = { has_government = communism }
+		name = ditlandia.28.a
+		set_cosmetic_tag = GER_DITCOM
+	}
+}
+country_event = {
+	id = ditlandia.27
+	title = ditlandia.27.t
+	desc = ditlandia.27.d
+	picture = GFX_kittymagic3
+
+	trigger = {
+		tag = SOV
+		is_puppet_of = DIT
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+	option = {
+		name = ditlandia.27.a
+		set_cosmetic_tag = SOV_DIT
+		set_capital = 399
+	}
+}
+country_event = {
+	id = ditlandia.29
+	title = ditlandia.29.t
+	desc = ditlandia.29.d
+	picture = GFX_kittymagic3
+
+	trigger = {
+		tag = FIN
+	}
+	mean_time_to_happen = {
+		days = 70
+	}
+	fire_only_once = yes
+	option = {
+		name = ditlandia.29.a
+		ai_chance = {
+			factor = 100
+		}
+		set_cosmetic_tag = FIN_SCAN
+		annex_country = {
+			target = SWE transfer_troops = yes
+		}
+		annex_country = {
+			target = NOR transfer_troops = yes
+		}
+		annex_country = {
+			target = DEN transfer_troops = yes
+		}
+		set_rule = { can_create_factions = yes }
+	}
+	option = {
+		name = ditlandia.29.a
+		ai_chance = {
+			factor = 0
+		}
+		set_cosmetic_tag = FIN_SCAN
+		set_rule = { can_create_factions = yes }
+	}
+}
+#country_event = {
+#	id = ditlandia.20
+#	title = ditlandia.20.t
+#	desc = ditlandia.20.d
+#	picture = GFX_event_derpking
+#	
+#	fire_only_once = yes
+#
+#	is_triggered_only = no
+#	
+#	trigger = {
+#		tag = DIT
+#		date > 1938.6.8
+#		has_country_flag = hans_liberated
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	option = {
+#		name = ditlandia.20.a
+#		custom_effect_tooltip = DERPKING
+#		hidden_effect = {
+#		remove_unit_leader = 9954
+#		}
+#	}
+#}
+## DITLANDIA FRENCH ALLIANCE ##
+country_event = {
+	id = ditlandia.30
+	title = ditlandia.30.t
+	desc = ditlandia.30.d
+	picture = GFX_report_event_sign_treaty2
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.30.a
+		ai_chance = {
+			factor = 85
+			}
+		DIT = {
+               add_to_faction = FRA
+        }
+        news_event = ditlandia_news.1100
+	}
+	option = {
+		name = ditlandia.30.b
+		ai_chance = {
+			factor = 15
+			}
+		news_event = ditlandia_news.1101
+	}
+}
+country_event = {
+	id = ditlandia.31
+	title = ditlandia.31.t
+	desc = ditlandia.31.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.31.a
+		ai_chance = { factor = 85 }
+		add_to_faction = FROM
+		FROM = { country_event = { 
+		days = 1 id = ditlandia.15 } 
+		}
+		news_event = ditlandia_news.1108
+	}
+	
+	option = {
+		name = ditlandia.31.b
+		ai_chance = { factor = 15 }
+		FROM = { 
+			country_event = { days = 1 id = ditlandia.16 }
+			}
+		}
+}
+
+# France accepts Ditlandia's Alliance #
+news_event = {
+	id = ditlandia_news.1100
+	title = ditlandia_news.1100.t
+	desc = ditlandia_news.1100.d
+	picture = GFX_dita_alliance
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia_news.1100.a
+	}
+}
+# France rejects Ditlandia's Alliance #
+news_event = {
+	id = ditlandia_news.1101
+	title = ditlandia_news.1101.t
+	desc = ditlandia_news.1101.d
+	picture = GFX_dita_alliance_no
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia_news.1101.a
+	}
+}
+##Yug
+news_event = {
+	id = ditlandia_news.1102
+	title = ditlandia_news.1102.t
+	desc = ditlandia_news.1102.d
+	picture = GFX_ditlandia_tanks_1
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia_news.1102.a
+	}
+}
+##HUNG
+news_event = {
+	id = ditlandia_news.1103
+	title = ditlandia_news.1103.t
+	desc = ditlandia_news.1103.d
+	picture = GFX_ditlandia_tanks
+
+	major = yes
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+
+	option = {
+		name = ditlandia_news.1103.a
+	}
+}
+## ROMANIA Sedes
+news_event = {
+	id = ditlandia_news.1104
+	title = ditlandia_news.1104.t
+	desc = ditlandia_news.1104.d
+	picture = GFX_ditlandia_tanks_1
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia_news.1104.a
+	}
+}
+## ROMANIA rejects
+news_event = {
+	id = ditlandia_news.1105
+	title = ditlandia_news.1105.t
+	desc = ditlandia_news.1105.d
+	picture = GFX_ditlandia_tanks
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia_news.1105.a
+	}
+}
+# Fall of Berlin (Ditlandia)
+news_event = {
+	id = ditlandia_news.1106
+	title = ditlandia_news.1106.t
+	desc = ditlandia_news.1106.d
+	picture = GFX_ditlandia_berlin
+	
+	major = yes
+	
+	trigger = {
+		64 = { is_controlled_by = DIT }
+		64 = { is_owned_by = GER }
+		DIT = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_berlin_dit }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_berlin_dit
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = ditlandia_news.1106.a
+		trigger = {
+			NOT = {
+				TAG = DIT
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = ditlandia_news.1106.b
+		trigger = { TAG = DIT }
+	}
+	option = {
+		name = ditlandia_news.1106.c
+		trigger = { TAG = GER }
+	}
+}
+
+# Dit joins Comintern
+news_event = {
+	id = ditlandia_news.1107
+	title = ditlandia_news.1107.t
+	desc = ditlandia_news.1107.d
+	picture = GFX_dita_alliance_comintern
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia_news.1107.a
+	}
+}
+# Dit joins Axis
+news_event = {
+	id = ditlandia_news.1108
+	title = ditlandia_news.1108.t
+	desc = ditlandia_news.1108.d
+	picture = GFX_dita_alliance_axis
+
+	major = yes
+
+
+	is_triggered_only = yes
+
+	option = {
+		name = ditlandia_news.1108.a
+	}
+}
+# Fall of Moscow (Ditlandia)
+news_event = {
+	id = ditlandia_news.1109
+	title = ditlandia_news.1109.t
+	desc = ditlandia_news.1109.d
+	picture = GFX_ditlandia_moscow
+	
+	major = yes
+	
+	trigger = {
+		219 = { is_controlled_by = DIT }
+		219 = { is_owned_by = SOV }
+		DIT = { has_war_with = SOV }
+		NOT = { has_global_flag = fall_of_moscow_dit }
+	}
+	immediate = {
+		set_global_flag = fall_of_moscow_dit
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = ditlandia_news.1109.a
+	}
+}
+# Fall of Budapest (Ditlandia)
+news_event = {
+	id = ditlandia_news.1110
+	title = ditlandia_news.1110.t
+	desc = ditlandia_news.1110.d
+	picture = GFX_ditlandia_budapest
+	
+	major = yes
+	
+	trigger = {
+		43 = { is_controlled_by = DIT }
+		43 = { is_owned_by = HUN }
+		DIT = { has_war_with = HUN }
+		NOT = { has_global_flag = fall_of_budapest_dit }
+	}
+	immediate = {
+		set_global_flag = fall_of_budapest_dit
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = ditlandia_news.1110.a
+	}
+}
+# Fall of London (Ditlandia)
+news_event = {
+	id = ditlandia_news.1111
+	title = ditlandia_news.1111.t
+	desc = ditlandia_news.1111.d
+	picture = GFX_ditlandia_london
+	
+	major = yes
+	
+	trigger = {
+		126 = { is_controlled_by = DIT }
+		126 = { is_owned_by = ENG }
+		DIT = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_london_dit }
+	}
+
+	immediate = {
+		set_global_flag = fall_of_london_dit
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = ditlandia_news.1111.a
+	}
+}
+# Fall of Washigton (Ditlandia)
+news_event = {
+	id = ditlandia_news.1112
+	title = ditlandia_news.1112.t
+	desc = ditlandia_news.1112.d
+	picture = GFX_ditlandia_washington
+	
+	major = yes
+	
+	trigger = {
+		361 = { is_controlled_by = DIT }
+		361 = { is_owned_by = USA }
+		DIT = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_washington_dit }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_washington_dit
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = ditlandia_news.1112.a
+	}
+}
+# Fall of Paris Dilandia
+news_event = {
+	id = ditlandia_news.1113
+	title = ditlandia_news.1113.t
+	desc = ditlandia_news.1113.d
+	picture = GFX_ditlandia_paris
+	
+	major = yes
+	
+	trigger = {
+		16 = { is_controlled_by = DIT }
+		16 = { is_owned_by = FRA }
+		DIT = { has_war_with = FRA }
+		NOT = { has_global_flag = fall_of_paris_dit }
+	}
+	immediate = {
+		set_global_flag = fall_of_paris_dit
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = ditlandia_news.1113.a
+	}
+ }
+# Rome
+news_event = {
+	id = ditlandia_news.1114
+	title = ditlandia_news.1114.t
+	desc = ditlandia_news.1114.d
+	picture = GFX_ditlandia_rome
+	
+	major = yes
+	
+	trigger = {
+		2 = { is_controlled_by = DIT }
+		2 = { is_owned_by = ITA }
+		DIT = { has_war_with = ITA }
+		NOT = { has_global_flag = fall_of_rome_dit }
+	}
+	immediate = {
+		set_global_flag = fall_of_rome_dit
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = ditlandia_news.1114.a
+	}
+}
+news_event = {
+	id = ditlandia_news.1115
+	title = ditlandia_news.1115.t
+	desc = ditlandia_news.1115.d
+	picture = GFX_ditlandia_tokyo
+	
+	major = yes
+	
+	trigger = {
+		282 = { is_controlled_by = DIT }
+		282 = { is_owned_by = JAP }
+		DIT = { has_war_with = JAP }
+		NOT = { has_global_flag = fall_of_tokyo_dit }
+	}
+	immediate = {
+		set_global_flag = fall_of_tokyo_dit
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+
+	option = {
+		name = ditlandia_news.1115.a
+	}
+}
+
+country_event = {
+	id = ditlandia.34
+	title = ditlandia.34.t
+	desc = ditlandia.34.d
+	picture = GFX_report_event_soviet_tanks
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.34.a
+		ai_chance = { factor = 85 }
+		add_to_faction = FROM
+		FROM = { country_event = { 
+		days = 1 id = ditlandia.12 } 
+		}
+		news_event = news.1107
+	}
+	
+	option = {
+		name = ditlandia.34.b
+		ai_chance = { factor = 15 }
+		FROM = { 
+			country_event = { days = 1 id = ditlandia.13 }
+		}
+	}
+}
+country_event = {
+	id = ditlandia.35
+	title = ditlandia.35.t
+	desc = ditlandia.35.d
+	picture = GFX_report_event_generic_read_write
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Accept demands
+		name = ditlandia.35.a
+		ai_chance = {
+			factor = 90
+			modifier = { # Don't accept if in a faction that can protect them
+				factor = 0
+				OR = {
+					is_in_faction_with = ENG
+					is_in_faction_with = FRA
+					is_in_faction_with = GER
+					is_in_faction_with = SOV
+				}
+			}
+		}
+		DIT = {
+			country_event = { days = 1 id = ditlandia.9 }
+		}
+	}
+	option = { # Refuse
+		name = ditlandia.35.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				add = 10
+				is_in_faction = yes
+				NOT = { is_in_faction_with = SOV }
+			}
+		}
+		DIT = {
+			country_event = { days = 1 id = ditlandia.10 }
+			effect_tooltip = {
+				create_wargoal = {
+					type = take_state
+					target = ROM
+					generator = { 83 82 }
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = ditlandia.36
+	title = ditlandia.36.t
+	desc = ditlandia.36.d
+	picture = GFX_ditlandia_tanks_smol
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.36.a
+		custom_effect_tooltip = emoji_contest_20_d
+		country_event = { id = ditlandia.37 days = 20 }
+	}
+}
+country_event = {
+	id = ditlandia.37
+	title = ditlandia.37.t
+	desc = ditlandia.37.d
+	picture = GFX_ditlandia_tanks_smol
+
+	is_triggered_only = yes
+	
+	option = {
+		name = ditlandia.37.a
+		random_list = {
+			50 = { add_timed_idea = { idea = new_emojis days = 600 } }
+			25 = { add_timed_idea = { idea = new_emojis days = 600 } add_timed_idea = { idea = bad_emojis days = 300 } }
+			25 = { add_timed_idea = { idea = new_emojis days = 600 } add_timed_idea = { idea = bad_emojis days = 300 } }
+		}
+		set_country_flag = emoji_contest_held
+		
+	}
+}

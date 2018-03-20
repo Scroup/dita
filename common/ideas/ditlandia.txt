@@ -1,0 +1,568 @@
+ideas = {
+
+	political_advisor = {
+
+		tjarnov = {
+
+			allowed = {
+				original_tag = DIT
+			}
+			
+			traits = { prince_of_terror }
+		}
+
+		andy = {
+				
+			allowed = {
+				original_tag = DIT
+			}
+			
+			traits = { popular_figurehead }
+		}
+
+		blitz = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			traits = { captain_of_industry }
+		}
+		scroup = {
+
+			allowed = {
+				original_tag = DIT
+			}
+			traits = { communist_revolutionary }
+			on_add = {
+				country_event = political.1
+			}
+		}
+		hanss = {
+
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			traits = { fascist_demagogue }
+			on_add = {
+				country_event = political.7
+			}
+		}
+		codephantom = {
+
+			allowed = {
+				original_tag = DIT }
+			traits = { democratic_reformer }
+	
+			on_add = {
+				country_event = political.13
+			}
+		}	
+}
+	
+
+	army_chief = {
+		
+		eztli = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			traits = { army_chief_defensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		tenshi = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		azi = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			traits = { army_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		councilor = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			traits = { army_entrenchment_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+		
+		flakesnow = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			traits = { air_chief_reform_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		pepethekek = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+		
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+	}
+
+	navy_chief = {
+		
+		katty = {
+
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		shoukaku = {
+
+			allowed = {
+				original_tag = DIT
+			}
+		
+			traits = { navy_chief_naval_aviation_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+	}
+
+	high_command = {
+
+		hanfei = {
+			
+			allowed = {
+				original_tag = DIT
+			}
+		
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		kevin = {
+
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			traits = { air_bomber_interception_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		magicmuller = {
+
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			traits = { army_regrouping_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		kynx = {
+
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			traits = { army_commando_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	theorist = {
+		victornevsky = {
+
+
+			allowed = {
+				original_tag = DIT
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		johnfreeman = {
+			
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+
+
+	# TECHNOLOGY
+	tank_manufacturer = {
+		
+		designer = yes
+		
+		kektanks = {
+
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			research_bonus = {
+				armor = 0.12
+			}
+			
+			traits = { tank_manufacturer }
+		}
+	}
+
+	materiel_manufacturer = {
+		
+		designer = yes
+		
+		vegaspro = {
+			picture = generic_artillery_manufacturer_3
+
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+						
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		kekiwintowka = {
+			
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+		rem = {
+			
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			research_bonus = {
+				motorized_equipment = 0.10
+				mot_rockets = 0.50
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	industrial_concern = {
+				
+		hobbit = {
+		
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			research_bonus = {
+				industry = 0.10
+			}
+			
+			traits = { industrial_concern }
+			
+			modifier = {
+			}
+		}
+		
+		snekfactory = {
+			
+			
+			allowed = {
+				original_tag = DIT
+			}
+			
+
+			
+			research_bonus = {
+				electronics = 0.10
+			}
+			
+			traits = { electronics_concern }
+			
+			modifier = {
+			}
+		}
+	}
+	aircraft_manufacturer = {
+		
+		designer = yes
+		kappa = {
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+	country = {
+		hansism = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+
+			picture = generic_manpower_bonus
+	
+			modifier = {
+				conscription = 0.029
+				enemy_partisan_effect = -0.1
+			}
+		}
+	}
+	country = {
+		shitposting = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				political_power_gain = -0.6
+				conscription = -0.007
+				research_time_factor = 0.07
+				justify_war_goal_time = 0.25
+			}
+		}
+	}
+		
+	country = {
+		normies_not_allowed = {
+		
+			allowed = { 
+				always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				justify_war_goal_time = -0.5
+				army_core_attack_factor = 0.05
+		}
+	}
+}
+country = {
+	kittymagic = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				research_time_factor = -0.01
+				stability_factor = -0.05
+			}
+		}
+	}
+country = {
+	spinner_love = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				research_time_factor = -0.05
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				political_power_gain = 0.1
+				MONTHLY_POPULATION = 0.15
+			}
+		}
+	}
+country = {
+	minecraft_event = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+	}
+country = {
+	roblox_event = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				stability_weekly = 0.025
+			}
+		}
+	}
+country = {
+	new_emojis = {
+			
+			
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+	}
+country = {
+	bad_emojis = {	
+			allowed = {
+				always = yes
+			}
+
+			removal_cost = -1
+	
+			modifier = {
+				political_power_gain = -0.15
+			}
+		}
+	}

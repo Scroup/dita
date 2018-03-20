@@ -1,0 +1,26 @@
+DIT_perks = {
+	allowed = {
+		original_tag = DIT
+	}
+	priority = {
+		base = 100
+	}
+}
+DIT_community_games = {
+	allowed = {
+		original_tag = DIT
+	}
+	priority = {
+		base = 10
+
+	}
+}
+DIT_internal_affairs = {
+	allowed = {
+		original_tag = DIT
+	}
+	priority = {
+		base = 10
+
+	}
+}

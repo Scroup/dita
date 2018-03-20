@@ -1,0 +1,116 @@
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_DIT_CAS1_medium"
+		texturefile = "gfx/interface/technologies/DIT_CAS1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_DIT_CAS2_medium"
+		texturefile = "gfx/interface/technologies/DIT_CAS2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_DIT_CAS3_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_fighter1_medium"
+		texturefile = "gfx/interface/technologies/DIT_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_fighter2_medium"
+		texturefile = "gfx/interface/technologies/DIT_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_DIT_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_DIT_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_DIT_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_DIT_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/USA_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_DIT_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/DIT_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_DIT_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/DIT_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_DIT_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/DIT_heavy_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_DIT_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DIT_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DIT_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DIT_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_DIT_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_DIT_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/DIT_motorised_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_DIT_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/DIT_motorised_equipment_1.dds"
+	}
+}

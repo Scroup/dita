@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_war_thunder"
+		texturefile = "gfx/interface/decisions/decision_war_thunder.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_minecraft"
+		texturefile = "gfx/interface/decisions/decision_minecraft.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_roblox"
+		texturefile = "gfx/interface/decisions/decision_roblox.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_gas_gas_gas"
+		texturefile = "gfx/interface/decisions/decision_gas_gas_gas.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_explosion"
+		texturefile = "gfx/interface/decisions/decision_explosion.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_emoji_contest"
+		texturefile = "gfx/interface/decisions/decision_emoji_contest.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_AAA_rage"
+		texturefile = "gfx/interface/decisions/decision_AAA_rage.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_wish_nn"
+		texturefile = "gfx/interface/decisions/decision_wish_nn.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_spinner_goal"
+		texturefile = "gfx/interface/decisions/decision_spinner.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_spinner_distribution"
+		texturefile = "gfx/interface/decisions/decision_spinner_2.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_spinner_distribution_2"
+		texturefile = "gfx/interface/decisions/decision_spinner.dds"
+	}
+}

@@ -1,0 +1,312 @@
+﻿capital = 107
+
+oob = "DIT_1936"
+
+set_research_slots = 3
+
+set_technology = {
+	tech_support = 1
+	tech_engineers = 1
+	tech_mountaineers = 1
+	fighter1 = 1
+	early_fighter = 1
+	early_bomber = 1
+	gwtank = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	interwar_antitank = 1
+	gw_artillery = 1
+	early_destroyer = 1
+	early_light_cruiser = 1
+	early_submarine = 1
+	basic_machine_tools = 1
+	motorised_infantry = 1
+}
+
+
+
+set_convoys = 23
+set_politics = {
+
+	parties = {
+		democratic = {
+			popularity = 1
+		}
+
+		fascism = {
+			popularity = 20
+		}
+
+		communism = {
+			popularity = 19
+			#banned = no #default is no
+		}
+
+		neutrality = {
+			popularity = 59
+		}
+		autism = {
+			popularity = 1
+		}
+	}
+
+	ruling_party = neutrality
+	last_election = "1935.5.3"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+1939.1.1 = {
+	set_politics = {
+
+		parties = {
+			democratic = {
+				popularity = 5
+			}
+
+			fascism = {
+				popularity = 20
+			}
+
+			communism = {
+				popularity = 5
+				#banned = no #default is no
+			}
+
+			neutrality = {
+				popularity = 60
+			}
+		}
+
+		ruling_party = neutrality
+		last_election = "1938.12.1"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+
+}
+
+add_ideas = {
+		shitposting
+		kittymagic
+	}
+
+set_war_support = 0.1
+set_stability = 0.4
+
+create_country_leader = {
+	name = "Dita"
+	desc = "POLITICS_DITA"
+	picture = "Dita.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = { Cornered_Fox
+	}
+}
+
+create_country_leader = {
+	name = "Dita the Emperor of Mankind"
+	desc = "POLITICS_DITAFASH"
+	picture = "DitaFash.dds"
+	expire = "1965.1.1"
+ ideology = fascism_ideology
+	traits = { Cornered_Fox Dictator
+		
+	}
+}
+
+create_country_leader = {
+	name = "President Dita"
+	desc = "POLITICS_DITA"
+	picture = "DitaDem.dds"
+	expire = "1965.1.1"
+ ideology = liberalism
+ traits = { 
+		
+	}
+}
+
+create_country_leader = {
+ name = "Comrade Dita"
+ desc = "POLITICS_COMRADEDITA"
+ picture = "ComradeDita.dds"
+ expire = "1965.1.1"
+ ideology = leninism
+ traits = { Cornered_Fox Dictator
+	
+	}
+}
+create_country_leader = {
+ name = "a kitty magic fag"
+ picture = "Varray.dds"
+ expire = "1965.1.1"
+ ideology = kekerism
+ traits = {	}
+}
+
+create_corps_commander = {
+	name = "Scroup the Felix"
+	portrait_path = "gfx/leaders/DIT/Scroup.dds"
+	traits = { trickster ranger dit_officer politically_connected }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 2
+}
+
+#create_corps_commander = {
+#	name = "Hans"
+#	portrait_path = "gfx/leaders/DIT/Hans.dds"
+#	traits = { urban_assault_specialist }
+#	skill = 2
+
+#}
+
+create_corps_commander = {
+	name = "Stuka-Sensei"
+	portrait_path = "gfx/leaders/DIT/Stuka.dds"
+	traits = { hill_fighter dit_officer }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "DerpKing22"
+	portrait_path = "gfx/leaders/DIT/DerpKing.dds"
+	traits = { commando dit_veteran inflexible_strategist }
+	skill = 2
+	id = 9954
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "John Freeman"
+	portrait_path = "gfx/leaders/DIT/JohnFreeman.dds"
+	traits = { dit_officer dit_fastest_memer career_officer }
+	skill = 1
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "CodePhantom"
+		picture = "Code.dds"
+	traits = { offensive_doctrine dit_veteran }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_field_marshal = {
+	name = "Dita"
+	picture = "Dita.dds"
+	traits = { }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_field_marshal = {
+	name = "Councilor"
+		picture = "Councilor.dds"
+	traits = { old_guard dit_veteran }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+create_corps_commander = {
+	name = "Rem"
+	portrait_path = "gfx/leaders/DIT/Waifu.dds"
+	traits = { waifu dit_officer }
+	skill = 4
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "Serval-Chan"
+	portrait_path = "gfx/leaders/DIT/Serval.dds"
+	traits = { waifu }
+	skill = 2
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Hanfei"
+	portrait_path = "gfx/leaders/DIT/Hanfei.dds"
+	traits = { dit_veteran }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Varray"
+	portrait_path = "gfx/leaders/DIT/Varray.dds"
+	traits = { dit_veteran }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Blitz"
+	portrait_path = "gfx/leaders/DIT/Blitz.dds"
+	traits = { panzer_leader dit_veteran }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+	name = "Awsy"
+	portrait_path = "gfx/leaders/DIT/Awsy.dds"
+	traits = { dit_veteran }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_navy_leader = {
+	name = "Who are you, man?"
+	portrait_path = "gfx/leaders/DIT/Pepe.dds"
+	traits = { superior_tactician }
+	skill = 4
+}
+create_navy_leader = {
+	name = "Shoukaku"
+	portrait_path = "gfx/leaders/DIT/Shoukaku.dds"
+	traits = { }
+	skill = 4
+
+}
+create_navy_leader = {
+	name = "Code Phantom Upgraded"
+	portrait_path = "gfx/leaders/DIT/CodeGal.dds"
+	traits = { }
+	skill = 4
+}

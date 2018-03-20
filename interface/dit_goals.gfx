@@ -1,0 +1,119 @@
+spriteTypes = {
+		SpriteType = {
+		name = "GFX_goal_videos"
+		texturefile = "gfx/interface/goals/goal_videos.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_traps"
+		texturefile = "gfx/interface/goals/goal_traps.dds"
+	}
+	SpriteType = {
+		name = "GFX_anime"
+		texturefile = "gfx/interface/goals/goal_anime.dds"
+	}
+	SpriteType = {
+		name = "GFX_gtx1080"
+		texturefile = "gfx/interface/goals/goal_gtx1080.dds"
+	}
+	SpriteType = {
+		name = "GFX_pepe_memes"
+		texturefile = "gfx/interface/goals/goal_pepe_memes.dds"
+	}
+	SpriteType = {
+		name = "GFX_DITpolicies"
+		texturefile = "gfx/interface/goals/goal_policies.dds"
+	}
+	SpriteType = {
+		name = "GFX_redanime"
+		texturefile = "gfx/interface/goals/goal_redanime.dds"
+	}
+	SpriteType = {
+		name = "GFX_stronkstuka"
+		texturefile = "gfx/interface/goals/goal_stuka_aviation.dds"
+	}
+	SpriteType = {
+		name = "GFX_subscriber"
+		texturefile = "gfx/interface/goals/goal_subscriber.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_hobbit"
+		texturefile = "gfx/interface/goals/goal_hobbit.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_discord"
+		texturefile = "gfx/interface/goals/goal_discord.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_adobe"
+		texturefile = "gfx/interface/goals/goal_adobe.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_heart"
+		texturefile = "gfx/interface/goals/goal_heart.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_wehraboo"
+		texturefile = "gfx/interface/goals/goal_wehraboo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_hans_conscription"
+		texturefile = "gfx/interface/goals/goal_hans_conscription.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_bulgaria"
+		texturefile = "gfx/interface/goals/goal_bulgaria.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_moreroom"
+		texturefile = "gfx/interface/goals/goal_moreroom.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_hansherewecome"
+		texturefile = "gfx/interface/goals/goal_hansherewecome.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_thefirst"
+		texturefile = "gfx/interface/goals/goal_thefirst.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_bettermap"
+		texturefile = "gfx/interface/goals/goal_bettermap.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_shou"
+		texturefile = "gfx/interface/goals/goal_shou.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_cringe"
+		texturefile = "gfx/interface/goals/goal_cringe.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_memezone"
+		texturefile = "gfx/interface/goals/goal_memezone.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_workers"
+		texturefile = "gfx/interface/goals/goal_workers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_animechancalls"
+		texturefile = "gfx/interface/goals/goal_animechancalls.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_dank"
+		texturefile = "gfx/interface/goals/goal_dank.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_murica"
+		texturefile = "gfx/interface/goals/goal_murica.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_boiflag"
+		texturefile = "gfx/interface/goals/goal_boiflag.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_kittymagic"
+		texturefile = "gfx/interface/goals/goal_kittymagic.dds"
+	}
+}

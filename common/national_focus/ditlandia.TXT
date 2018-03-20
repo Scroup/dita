@@ -1,0 +1,1070 @@
+focus_tree = {
+	id = dita_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = DIT
+		}
+	}
+
+	############################
+	#### INDUSTRIAL SECTION ####
+	############################
+
+	focus = {
+		id = DIT_videos
+		icon = GFX_goal_videos
+		text = Video_every_day
+		x = 1
+		y = 0
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_manpower = 282625
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = DIT_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = DIT_videos }
+		x = 1
+		y = 1
+		cost = 8
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			random_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DIT_factories_mil
+		icon = GFX_goal_generic_construct_mil_factory
+		text = Double_the_Meme_Production
+		prerequisite = { focus = DIT_factories }
+		x = 1
+		y = 2
+		cost = 13
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DIT_extra_tech_slot
+		icon = GFX_focus_research
+		text = Belgrade_Meme_Labs
+		prerequisite = { focus = DIT_factories_mil }
+		x = 1
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_research_slot = 1
+				
+			}
+
+	}
+	focus = {
+		id = DIT_discord_server
+		icon = GFX_goal_discord
+		text = Promote_Discord_Server
+		prerequisite = { focus = DIT_extra_tech_slot }
+		x = 1
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_manpower = 59430
+			add_war_support = 0.15
+			}
+
+	}
+	focus = {
+		id = DIT_Bits
+		icon = GFX_focus_wonderweapons
+		text = "Further Developments"
+		prerequisite = { focus = DIT_discord_server }
+		x = 1
+		y = 5
+		cost = 5
+		completion_reward = {
+			add_manpower = 1000
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
+			add_tech_bonus = {
+				bonus = 0.95
+				uses = 3
+				category = radar_tech
+			}
+		}
+	}
+	focus = {
+		id = DIT_AdobePremier
+		icon = GFX_goal_adobe
+		text = "Get Adobe Premiere"
+		prerequisite = { focus = DIT_Bits }
+		x = 1
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.05
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+				category = air_doctrine
+			}
+		}	
+	}
+	focus = {
+		id = DIT_New_People
+		icon = GFX_goal_discord
+		prerequisite = { focus = DIT_Bits }
+		available = {
+			has_country_flag = hans_liberated
+			num_of_factories > 50
+			NOT = {
+			has_idea = shitposting
+				}
+			}
+		x = 3
+		y = 6
+		cost = 10
+		completion_reward = {
+			add_political_power = 100
+			country_event = { days = 2 id = ditlandia.19 }
+		}
+	}
+#######################################################
+############### POLITICS #########################
+#######################################################
+	focus = {
+		id = DIT_politics
+		icon = GFX_goal_generic_national_unity
+		text = Strengthen_Policies
+		x = 10
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 20
+			add_manpower = 30000
+			add_stability = 0.1
+			}
+	}
+	focus = {
+		id = DIT_politics_2
+		icon = GFX_goal_generic_political_pressure
+		text = Try_to_stop_Shitposting
+		prerequisite = { focus = DIT_politics }
+		x = 12
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 15
+			}
+	}
+	focus = {
+		id = DIT_politics_3
+		icon = GFX_DITpolicies
+		text = Stop_shitposting_once_and_for_all
+		prerequisite = { focus = DIT_politics }
+		prerequisite = { focus = DIT_politics_2 }
+		available = {
+			OR = {
+				has_country_flag = hans_liberated
+			}
+		}
+		x = 8
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 15
+			country_event = { days = 2 id = ditlandia.7 }
+			}
+	}
+	focus = {
+		id = DIT_Dem
+		icon = GFX_goal_support_democracy
+		text = The_Trap_Way
+		prerequisite = { focus = DIT_politics }
+		mutually_exclusive = { focus = DIT_Com }
+		mutually_exclusive = { focus = DIT_Fash }
+		available = {
+			OR = {
+				has_government = democratic
+				has_government = neutrality
+			}
+		}
+		x = 10
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.50 } 
+			add_ideas = liberty_ethos_focus
+
+			}
+	}
+
+	focus = {
+		id = DIT_Com
+		icon = GFX_goal_support_communism
+		text = Embrace_the_Bias
+		prerequisite = { focus = DIT_politics }
+		mutually_exclusive = { focus = DIT_Dem }
+		mutually_exclusive = { focus = DIT_Fash }
+		available = {
+			OR = {
+				has_government = communism
+				has_government = neutrality
+			}
+		}
+		x = 5
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.25 } 
+			add_ideas = internationalism
+			}
+
+	}
+####################################################
+################## Democratic Way ##################
+####################################################
+	focus = {
+		id = DIT_TrapAnnex
+		icon = GFX_goal_traps
+		text = Traps_for_Hans
+		prerequisite = { focus = DIT_Dem }
+		x = 10
+		y = 2
+		cost = 10
+		completion_reward = {
+			annex_country = { target = HUN }
+			add_threat = 2
+			news_event = { days = 2 id = ditlandia_news.1103 }
+		}
+	}
+	focus = {
+		id = DIT_TrapLove
+		icon = GFX_anime
+		text = We_love_anime
+		prerequisite = { focus = DIT_TrapAnnex }
+		x = 12
+		y = 3
+		cost = 9
+		completion_reward = {
+			add_stability = 0.05
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = DIT_SubEvents
+		icon = GFX_subscriber
+		text = Subscriber_Events
+		prerequisite = { focus = DIT_TrapAnnex }
+		x = 12
+		y = 2
+		cost = 9
+		completion_reward = {
+			add_manpower = 21351
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DIT_Shou
+		icon = GFX_goal_shou
+		text = Shou_is_happy
+		prerequisite = { focus = DIT_TrapAnnex }
+		x = 8
+		y = 3
+		cost = 9
+		completion_reward = {
+			add_stability = 0.05
+			add_resource = {
+				type = rubber
+				amount = 10
+				state = 43
+		}
+	}
+}
+	focus = {
+		id = DIT_Dem1
+		icon = GFX_focus_generic_home_defense
+		text = Maintain_Status_Quo
+		prerequisite = { focus = DIT_TrapAnnex }
+		x = 10
+		y = 3
+		cost = 10
+		completion_reward = {
+			add_stability = 0.25
+		}
+	}
+	focus = {
+		id = DIT_Dem2
+		icon = GFX_goal_cringe
+		text = "Noice Investments"
+		prerequisite = { focus = DIT_Dem1 }
+		x = 10
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_resource = { 
+				type = steel
+				amount = 20 
+				state = 107}
+			add_resource = { 
+				type = steel
+				amount = 20 
+				state = 43}
+			add_resource = { 
+				type = steel
+				amount = 11 
+				state = 108
+			}
+		}
+	}		
+	focus = {
+		id = DIT_Dem3
+		icon = GFX_goal_dank
+		text = "Dank Investments"
+		prerequisite = { focus = DIT_Dem1 }
+		x = 12
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_resource = { 
+				type = rubber
+				amount = 5 
+				state = 107}
+			add_resource = { 
+				type = rubber
+				amount = 4
+				state = 154}
+			add_resource = { 
+				type = rubber
+				amount = 15 
+				state = 108
+			}
+		}
+	}
+	focus = {
+		id = DIT_Dem4
+		icon = GFX_goal_murica
+		text = "Fat Murican Aesthetics"
+		prerequisite = { focus = DIT_Dem1 }
+		x = 8
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_resource = { 
+				type = oil
+				amount = 4 
+				state = 107}
+			add_resource = { 
+				type = oil
+				amount = 12
+				state = 108}
+			add_resource = { 
+				type = oil
+				amount = 16 
+				state = 43
+			}
+		}
+	}
+	focus = {
+		id = DIT_AllyFrance
+		icon = GFX_goal_generic_alliance
+		text = 10shi_translator
+		prerequisite = { focus = DIT_TrapAnnex }
+		bypass = {
+			FRA = {
+				OR = {
+					exists = no
+				}
+
+		}
+	}
+		x = 8
+		y = 2
+		cost = 3
+		completion_reward = {
+			country_event = { days = 1 id = ditlandia.3 }
+		}
+	}
+	focus = {
+		id = DIT_Dem5
+		icon = GFX_goal_support_democracy
+		text = Traps_are_not_gay
+		prerequisite = { focus = DIT_Dem2 }
+		x = 9
+		y = 5
+		cost = 10
+		completion_reward = {
+			107 = {
+			add_manpower = 826250
+			}
+			108 = {
+			add_manpower = 826250
+			}
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+		}
+	}
+}
+
+	focus = {
+		id = DIT_Dem6
+		icon = GFX_goal_generic_political_pressure
+		text = Traps_are_gay
+		prerequisite = { focus = DIT_Dem2 }
+		mutually_exclusive = { focus = DIT_Dem5 }
+		x = 11
+		y = 5
+		cost = 10
+		completion_reward = {
+			107 = {
+			add_manpower = 826250
+			}
+			108 = {
+			add_manpower = 826250
+			}
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 0.5
+				uses = 2
+				technology = tactical_bomber2
+				technology = CAS2
+			}
+		}
+	}
+	focus = {
+		id = DIT_Dem7
+		icon = GFX_goal_boiflag
+		prerequisite = { focus = DIT_Dem6 focus = DIT_Dem5 }
+		x = 10
+		y = 6
+		cost = 10
+		completion_reward = {
+			set_rule { can_create_factions = yes }
+			}
+		}
+
+
+
+#################################################
+################## Fascist Path ##################
+###################################################
+
+	focus = {
+		id = DIT_Fash
+		icon = GFX_goal_support_fascism
+		text = The_Wehrb_Dark_Path
+		prerequisite = { focus = DIT_politics }
+		mutually_exclusive = { focus = DIT_Com }
+		mutually_exclusive = { focus = DIT_Dem }
+		available = {
+			OR = {
+				has_government = fascism
+				has_government = neutrality
+			}
+		}
+		x = 15
+		y = 1
+		cost = 10
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = 0.25 } 
+			add_ideas = nationalism
+			}
+
+		}
+	focus = {
+		id = DIT_Fash_Conquer
+		icon = GFX_goal_hansherewecome
+		text = "Hans, here we come!"
+		prerequisite = { focus = DIT_Fash }
+		available = {
+			OR = {
+				has_government = fascism
+				
+			}
+		}
+		x = 15
+		y = 2
+		cost = 10
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = HUN } 
+			add_stability = 0.10
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = DIT_JoinAxis
+		icon = GFX_goal_generic_alliance
+		prerequisite = { focus = DIT_Fash_Conquer }
+		available = {
+			OR = {
+				has_country_flag = hans_liberated
+				
+			}
+		}
+		x = 14
+		y = 5
+		cost = 2
+		completion_reward = {
+			country_event = { days = 1 id = ditlandia.14 }
+		}
+	}
+	focus = {
+		id = DIT_Fash_Conquer_2
+		icon = GFX_goal_moreroom
+		text = "More Room"
+		prerequisite = { focus = DIT_Fash_Conquer }
+		available = {
+			OR = {
+				owns_state = 43
+				owns_state = 155
+				owns_state = 154
+				
+			}
+		}
+		bypass = {
+			YUG = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+
+		}
+	}
+		x = 15
+		y = 3
+		cost = 10
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = YUG } 
+		}
+	}
+
+	focus = {
+		id = DIT_Fash_Conquer_3
+		icon = GFX_goal_bulgaria
+		text = "All of South Slavs"
+		prerequisite = { focus = DIT_Fash_Conquer_2 }
+		bypass = {
+			BUL = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+
+		}
+	}
+		x = 15
+		y = 4
+		cost = 10
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = BUL }
+		}
+	}
+	focus = {
+		id = DIT_Fash_Hans
+		icon = GFX_goal_generic_more_territorial_claims
+		text = "Hans' Conscription Law"
+		prerequisite = { focus = DIT_Fash }
+		available = {
+			OR = {
+				owns_state = 43
+				owns_state = 155
+				owns_state = 154
+				
+			}
+		}
+		x = 17
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_manpower = 500000
+			add_political_power = 120
+			add_ideas = hansism
+			army_experience = 20
+			add_war_support = 0.15
+			}
+		}
+
+	focus = {
+		id = DIT_Fash_Hans_Conscript
+		icon = GFX_goal_hans_conscription
+		text = "Hans' Conscription Law"
+		prerequisite = { focus = DIT_Fash }
+		available = {
+			OR = {
+				owns_state = 43
+				owns_state = 155
+				owns_state = 154
+				
+			}
+		}
+		x = 17
+		y = 2
+		cost = 10
+		completion_reward = {
+			add_manpower = 500000
+			add_political_power = 120
+			add_ideas = hansism
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = DIT_Fash_Hans2
+		icon = GFX_goal_generic_military_sphere
+		text = "Stronk Kruppe Stahl"
+		prerequisite = { focus = DIT_Fash_Hans_Conscript }
+		x = 17
+		y = 3
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
+				uses = 2
+				category = armor
+		
+		}
+	}
+}
+	focus = {
+		id = DIT_Fash_Hans3
+		icon = GFX_stronkstuka
+		text = "Stronk Stuka Aviation"
+		prerequisite = { focus = DIT_Fash_Hans2 }
+		x = 17
+		y = 4
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				name = air_bonus
+				bonus = 0.5
+				uses = 2
+				category = medium_air
+			}
+		
+	}
+}
+	focus = {
+		id = DIT_FashMemes
+		icon = GFX_pepe_memes
+		text = "Pepe Memes"
+		prerequisite = { focus = DIT_Fash_Conquer_3 }
+		prerequisite = { focus = DIT_Fash_Hans3 }
+		x = 16
+		y = 5
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = land_doctrine
+				add_manpower = -100000
+			}
+		
+	}
+}
+
+focus = {
+		id = DIT_FashBonusStuff
+		icon = GFX_goal_generic_small_arms
+		text = "Killing Machines"
+		prerequisite = { focus = DIT_FashMemes }
+		x = 14
+		y = 6
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.4
+				uses = 3
+				category = infantry_weapons
+				category = artillery
+			}
+	}
+}
+	
+	focus = {
+		id = DIT_FashFaction
+		icon = GFX_goal_wehraboo
+		prerequisite = { focus = DIT_FashMemes }
+		x = 16
+		y = 6
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = air_doctrine
+				}
+		set_rule = { can_create_factions = yes }
+	}
+}
+#######################################################
+################## Communist Path #####################
+#######################################################
+	focus = {
+		id = DIT_Com_Annex
+		icon = GFX_goal_heart
+		text = "Internationale for Hans"
+		prerequisite = { focus = DIT_Com }
+		available = {
+			OR = {
+				has_government = communism
+				
+			}
+		}
+		x = 5
+		y = 2
+		cost = 10
+		completion_reward = {
+			annex_country = { target = HUN }
+			add_stability = 0.10
+			add_threat = 2
+			set_rule = { can_send_volunteers = yes }
+			news_event = { days = 1 id = ditlandia_news.1103 }
+		}
+	}
+	focus = {
+		id = DIT_Comintern
+		icon = GFX_goal_generic_alliance
+		text = DIT_Comintern
+		prerequisite = { focus = DIT_Com_Annex }
+		available = {
+			OR = {
+				has_government = communism
+				
+			}
+		}
+		x = 7
+		y = 6
+		cost = 1
+		completion_reward = {
+		 country_event = { days = 1 id = ditlandia.11 }
+		}
+	}
+
+
+	focus = {
+		id = DIT_Com_Annex2
+		icon = GFX_goal_memezone
+		text = "Spread Marxist Memes"
+		prerequisite = { focus = DIT_Com_Annex }
+		available = {
+			OR = {
+				has_government = communism
+			}
+		}
+		x = 5
+		y = 3
+		cost = 13
+		completion_reward = {
+			annex_country = { target = YUG }
+			add_threat = 5
+			news_event = { days = 2 id = ditlandia_news.1102 }
+		}
+	}
+	focus = {
+		id = DIT_ComScience
+		icon = GFX_goal_workers
+		text = "Workers Culture"
+		prerequisite = { focus = DIT_Com_Annex2 }
+		available = {
+			OR = {
+				has_government = communism
+				
+			}
+		}
+		x = 4
+		y = 4
+		cost = 10
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.12
+				uses = 5
+				category = industry
+		}
+	}
+}
+	focus = {
+		id = DIT_ComScience2
+		icon = GFX_redanime
+		text = Red_Anime
+		prerequisite = { focus = DIT_Com_Annex2 }
+		x = 6
+		y = 4
+		cost = 13
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = DIT_ComFactories
+		icon = GFX_goal_animechancalls
+		prerequisite = { focus = DIT_ComScience2 }
+		prerequisite = { focus = DIT_ComScience }
+		x = 5
+		y = 5
+		cost = 10
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available_if_capitulated = yes
+
+		complete_tooltip = {
+			random_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 15
+					instant_build = yes
+				}
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				add_extra_state_shared_building_slots = 15
+				add_building_construction = {
+					type = industrial_complex
+					level = 15
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = DIT_RushB
+		icon = GFX_goal_generic_war_with_comintern
+		text = "Rush B tactics"
+		prerequisite = { focus = DIT_ComScience2 }
+		x = 7
+		y = 5
+		cost = 10
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 0.3
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	
+}
+focus = {
+		id = DIT_ComMemeCreators
+		icon = GFX_goal_generic_construct_mil_factory
+		text = "War Preparations"
+		prerequisite = { focus = DIT_ComScience }
+		x = 3
+		y = 5
+		cost = 10
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				add_extra_state_shared_building_slots = 7
+				add_building_construction = {
+					type = arms_factory
+					level = 7
+					instant_build = yes
+				}
+			}
+		}
+	}
+focus = {
+		id = DIT_ComMemeCreators2
+		icon = GFX_goal_hobbit
+		text = "Scroup's Photoshop Skills"
+		prerequisite = { focus = DIT_ComMemeCreators }
+		prerequisite = { focus = DIT_RushB }
+		prerequisite = { focus = DIT_ComFactories }
+		x = 5
+		y = 6
+		cost = 12
+		completion_reward = {
+			add_popularity = { ideology = communism popularity = 0.1 }
+			set_rule = { can_create_factions = yes }
+			random_owned_controlled_state = {
+				prioritize = { 10 }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+#######################################################
+	################## Claims ##########################
+#######################################################
+	focus = {
+		id = DIT_Claims
+		icon = GFX_goal_thefirst
+		text = DIT_Never_Forgetti_the_First
+		available = {
+			owns_state = 43
+			owns_state = 154
+			owns_state = 155
+			AND = {
+				date > 1937.1.1
+			}
+		}
+		x = 3
+		y = 0
+		cost = 12
+		completion_reward = {
+			add_political_power = 50
+			add_state_core = 43
+			add_state_core = 154
+			add_state_core = 155
+			}
+	}
+	focus = {
+		id = DIT_Claims2
+		icon = GFX_goal_bettermap
+		text = "Map should look better!"
+		prerequisite = { focus = DIT_Claims }
+		x = 3
+		y = 1
+		bypass = {
+			ROM = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+				}
+			}
+		}
+		cost = 12
+		completion_reward = {
+			add_political_power = 50
+			add_state_claim = 83
+			add_state_claim = 82
+			country_event = { days = 1 id = ditlandia.8 }
+			}
+	}
+
+	focus = {
+		id = DIT_Better_Subs
+		icon = GFX_goal_generic_allies_build_infantry
+		text = "Better Subs"
+		x = 3
+		y = 2
+		cost = 12
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = DIT_GTX1080
+		icon = GFX_gtx1080
+		text = Get_GTX1080
+		prerequisite = { focus = DIT_Better_Subs }
+		x = 3
+		y = 3
+		cost = 12
+		available = {
+			OR = {
+				has_country_flag = hans_liberated
+			}
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 4
+				category = electronics
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = DIT_goal_kittymagic
+		icon = GFX_goal_kittymagic
+		x = 17
+		y = 0
+		cost = 9
+		available = {
+			OR = {
+				has_country_flag = hans_liberated
+			}
+		}
+		completion_reward = {
+			country_event = { days = 2 id = ditlandia.26 }
+			}
+		}
+	}
+
+}
