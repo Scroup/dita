@@ -113,4 +113,158 @@ spriteTypes = {
 		name = "GFX_DIT_motorized_equipment_1_medium"
 		texturefile = "gfx/interface/technologies/DIT_motorised_equipment_1.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_DIT_gwtank_medium"
+		texturefile = "gfx/interface/technologies/STG_MS1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DIT_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/STG_BT7.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/DIT_T50.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_DIT_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/STG_T60.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_DIT_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/STG_T3476.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_DIT_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/STG_T44.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/STG_T3485.dds"
+	}
+	SpriteType = {
+		name = "GFX_DIT_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/STG_T54B.dds"
+	}
+
+	### UKEK TECHNOLOGIES ###
+
+	SpriteType = {
+		name = "GFX_KEK_CAS1_medium"
+		texturefile = "gfx/interface/technologies/DIT_CAS1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KEK_CAS2_medium"
+		texturefile = "gfx/interface/technologies/DIT_CAS2.dds"
+	}	
+	SpriteType = {
+		name = "GFX_KEK_CAS3_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_fighter1_medium"
+		texturefile = "gfx/interface/technologies/DIT_fighter1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_fighter2_medium"
+		texturefile = "gfx/interface/technologies/DIT_fighter2.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_KEK_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_KEK_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_KEK_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KEK_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/USA_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_KEK_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/DIT_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KEK_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/DIT_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_KEK_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/DIT_heavy_fighter3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_jet_fighter2_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KEK_jet_fighter1_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_fighter1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KEK_jet_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_strategic_bomber1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KEK_jet_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_tactical_bomber2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_KEK_jet_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/DIT_jet_tactical_bomber1.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KEK_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KEK_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/USA_naval_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_KEK_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/DIT_motorised_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_KEK_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/DIT_motorised_equipment_1.dds"
+	}
 }
