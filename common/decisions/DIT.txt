@@ -222,7 +222,7 @@ DIT_community_games = {
 			factor = 10
 		}
 
-		days_re_enable = 2
+		days_re_enable = 100
 		visible = {
 
 		}
@@ -246,7 +246,7 @@ DIT_community_games = {
 			factor = 10
 		}
 
-		days_re_enable = 2
+		days_re_enable = 100
 		visible = {
 
 		}
