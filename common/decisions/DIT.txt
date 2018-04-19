@@ -205,7 +205,7 @@ DIT_community_games = {
 			has_country_flag = war_thunder_games_held_2
 		}
 		complete_effect = {
-			add_war_support = 0.1
+			add_war_support = 0.05
 			army_experience = 10
 			set_country_flag = war_thunder_games_held_3
 		}
@@ -222,7 +222,7 @@ DIT_community_games = {
 			factor = 10
 		}
 
-		days_remove = 100
+		days_re_enable = 2
 		visible = {
 
 		}
@@ -246,7 +246,7 @@ DIT_community_games = {
 			factor = 10
 		}
 
-		days_remove = 100
+		days_re_enable = 2
 		visible = {
 
 		}
@@ -290,7 +290,7 @@ DIT_internal_affairs = {
 			NOT = {
 				has_idea = shitposting
 			}
-			owns_state = 762
+			owns_state = 763
 		}
 
 		cost = 0
@@ -305,7 +305,7 @@ DIT_internal_affairs = {
 		}
 
 		complete_effect = {
-			set_capital = 762
+			set_capital = 763
 		}
 	}
 	spinner_goal = {
@@ -345,17 +345,17 @@ DIT_internal_affairs = {
 
 		visible = {
 			SPI = { exists = no }
-			NOT = { owns_state = 764 }
+			NOT = { owns_state = 765 }
 		}
 
 		complete_effect = {
-			764 = {
+			765 = {
 			owner = {
 				ROOT = {
 					create_wargoal = {
 						target = PREV
 						type = take_state
-						generator = { 764 }
+						generator = { 765 }
 						}
 					}
 				}
@@ -366,7 +366,7 @@ DIT_internal_affairs = {
 	spinner_distribution = {
 
 		available = {
-			NOT = { owns_state = 764 }
+			NOT = { owns_state = 765 }
 		}
 
 		cost = 120
@@ -379,7 +379,7 @@ DIT_internal_affairs = {
 		}
 
 		visible = {
-			NOT = { owns_state = 764 }
+			NOT = { owns_state = 765 }
 		}
 
 		modifier = {
@@ -392,7 +392,7 @@ DIT_internal_affairs = {
 	spinner_distribution_2 = {
 
 		available = {
-			owns_state = 764
+			owns_state = 765
 		}
 
 		cost = 120
@@ -405,7 +405,7 @@ DIT_internal_affairs = {
 		}
 
 		visible = {
-			owns_state = 764
+			owns_state = 765
 		}
 
 		modifier = {

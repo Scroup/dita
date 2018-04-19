@@ -201,14 +201,13 @@ DIT_heavy_tank_equipment_1:0 "Leichttraktor"
  DIT_artillery_equipment_2:0 "Party Cannon 1940"
  DIT_artillery_equipment_3:0 "Party Cannon 152 mm"
 
-
   dita_alliance:0 "Dita's Commonwealth"
 
 
- STATE_762:0 "The Swamp"
- STATE_763:0 "No Gay"
- STATE_764:0 "Spinner"
- STATE_765:0 "Ukek"
+ STATE_763:0 "The Swamp"
+ STATE_764:0 "No Gay"
+ STATE_765:0 "Spinner"
+ STATE_766:0 "Ukek"
 
  VICTORY_POINTS_13205:0 "Dita's Swamp"
  VICTORY_POINTS_11147:0 "Söderhamn"

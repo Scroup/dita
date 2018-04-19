@@ -1,4 +1,4 @@
-﻿capital = 765
+﻿capital = 766
 
 oob = "KEK_1936"
 
