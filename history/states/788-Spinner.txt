@@ -1,6 +1,6 @@
 state={
-	id=789
-	name="STATE_789"
+	id=788
+	name="STATE_788"
 	state_category = megalopolis
 
 	resources={
