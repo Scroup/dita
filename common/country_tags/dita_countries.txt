@@ -1,0 +1,3 @@
+DIT = "countries/Ditlandia.txt"
+KEK = "countries/Ukek.txt"
+SPI = "countries/Spinner.txt"

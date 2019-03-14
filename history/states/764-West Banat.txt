@@ -1,0 +1,23 @@
+
+state={
+	id=764
+	name="STATE_764"
+	manpower = 585579
+	state_category = town
+
+	history={
+		owner = DIT
+		controller = DIT
+
+		buildings = {
+			infrastructure = 6
+		}
+		add_core_of = DIT
+		add_core_of = YGU
+		add_core_of = SER
+	}
+
+	provinces={
+		614 3614 6643 11787
+	}
+}
