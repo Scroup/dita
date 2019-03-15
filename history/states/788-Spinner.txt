@@ -20,10 +20,10 @@ state={
 		industrial_complex = 5
 		13209 = { naval_base = 5 }
 		}
-		victory_points = { 13208 25 }
-		victory_points = { 13207 5 }
-		victory_points = { 13206 5 }
-		victory_points = { 13209 5 }
+		victory_points = { 13221 25 }
+		victory_points = { 13220 5 }
+		victory_points = { 13219 5 }
+		victory_points = { 13218 5 }
 	}
 	provinces={
 		13221 13220 13218 13219

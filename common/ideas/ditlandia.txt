@@ -452,7 +452,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.6
 				conscription = -0.007
-				research_time_factor = 0.07
+				research_speed_factor = 0.07
 				justify_war_goal_time = 0.25
 			}
 		}
@@ -483,7 +483,7 @@ country = {
 			removal_cost = -1
 	
 			modifier = {
-				research_time_factor = -0.01
+				research_speed_factor = -0.01
 				stability_factor = -0.05
 			}
 		}
@@ -499,7 +499,7 @@ country = {
 			removal_cost = -1
 	
 			modifier = {
-				research_time_factor = -0.05
+				research_speed_factor = -0.05
 				stability_factor = 0.15
 				war_support_factor = 0.1
 				political_power_gain = 0.1
