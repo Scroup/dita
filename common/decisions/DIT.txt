@@ -305,7 +305,7 @@ DIT_internal_affairs = {
 		}
 
 		complete_effect = {
-			set_capital = 763
+			set_capital = 789
 		}
 	}
 	spinner_goal = {

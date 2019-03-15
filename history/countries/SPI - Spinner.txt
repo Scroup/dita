@@ -1,4 +1,4 @@
-﻿capital = 765
+﻿capital = 788
 
 oob = "SPI_1936"
 

@@ -12,7 +12,7 @@ state={
 
 		}
 		victory_points = {
-			13210 15 
+			13222 15 
 		}
 		add_core_of = DIT
 		add_core_of = YUG
@@ -21,7 +21,7 @@ state={
 	}
 
 	provinces={
-		3617 13210 13222 
+		3617 13222 
 	}
 	manpower=12000
 	buildings_max_level_factor=1.000
